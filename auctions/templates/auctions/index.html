@@ -19,7 +19,7 @@
         {% endif %}
 
         <p class="desc">{{ list.desc }}</p>
-        <a><a class="c_price">Starting Bid: </a> {{ list.starting_bid }} $ </a>
+        <a><a class="c_price">Starting Bid: </a> ₹ {{ list.starting_bid }}  </a>
         <a href="{% url 'listingpage' list.id %}">View Bid</a>
     </div>  
     {% endfor %}

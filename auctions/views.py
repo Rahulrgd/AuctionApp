@@ -164,7 +164,7 @@ def bid(request):
         messages.success(request, "Bid Placed")
         return redirect("index")
 
-    messages.warning(request, f"Sorry, {bid_amnt} is less. It should be more than {min_req_bid}$.")
+    messages.warning(request, f"Sorry, {bid_amnt} is less. It should be more than ₹{min_req_bid}.")
     return listingpage(request, list_id)
 
    
